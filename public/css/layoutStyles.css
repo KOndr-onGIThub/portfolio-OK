@@ -1,3 +1,4 @@
+/* variables */
 :root{
    /*  --sidebar-bg-clr: linear-gradient(351deg, rgba(18,2,61,1) 28%, rgba(53,28,120,1) 69%, rgba(0,0,0,1) 99%); */
     --asidebar-bg-clr: #141414;
@@ -8,14 +9,9 @@
     --sidebar-clr: rgb(204, 204, 204);
     --main-clr: rgb(204, 204, 204);
     --boby-clr: rgb(204, 204, 204);
-
 }
 
-
-/* *, *:before, *:after{
-    box-sizing: inherit;
-} */
-
+/* default setting for basic elements */
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
 a, p, u, em, i, b, img,
@@ -30,6 +26,53 @@ article, aside, footer, header, nav, section
    vertical-align: baseline;
 }
 
+/* body and main content */
+body{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    height: 100vh;
+    background: var(--body-bg-clr);
+    color: var(--boby-clr);
+}
+
+.mine_content{
+    flex-grow: 1;
+    color: var(--main-clr);
+}
+
+a{
+    color: var(--main-clr);
+}
+
+a:hover,
+a:focus,
+a:active{
+    color: var(--link-sideBar-clr);
+}
+
+a.no_underline{
+    text-decoration: none;
+}
+
+/* sidebar */
+.boder_heder{
+    border: 1px solid var(--main-clr);
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.side_bar {
+    display: none;
+    /* background: var(--sidebar-bg-clr); */
+    color: var(--sidebar-clr);
+    font-family: Rockwell, "Courier Bold", Georgia, serif;
+    width: clamp(5rem, 20vw, 20rem);
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    padding-top: 2rem;
+}
+
 .side_bar h3{
 text-transform: uppercase;
 }
@@ -42,39 +85,18 @@ text-transform: uppercase;
     text-align: center;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    height: 100vh;
-    background: var(--body-bg-clr);
-    color: var(--boby-clr);
+.side_bar img{
+    width: 70%;
+    height: auto;
 }
 
-
-.mine_content{
-    flex-grow: 1;
-    color: var(--main-clr);
+.side_bar a:active,
+.side_bar a:focus,
+.side_bar a:hover{
+   color: var(--link-sideBar-clr);
 }
 
-.boder_heder{
-    border: 1px solid var(--main-clr);
-    margin: 0.5em;
-    padding: 0.5em;
-    text-align: center;
-}
-
-.side_bar {
-    display: none;
-    /* align-items: flex-start; */
-    /* background: var(--sidebar-bg-clr); */
-    color: var(--sidebar-clr);
-    font-family: Rockwell, "Courier Bold", Georgia, serif;
-    width: clamp(5rem, 20vw, 20rem);
-    font-size: clamp(0.8rem, 2vw, 2rem);
-    padding-top: 2rem;
-  }
-
+/* asidebar */
 .aside_bar{
     background: var(--asidebar-bg-clr);
     width: clamp(1rem, 5vw, 3rem);
@@ -82,11 +104,6 @@ body{
     text-align: center;
     border-left: 1px solid rgb(0, 0, 0);
     padding-top: 2rem;
-}
-  /* Resize images */
-  .side_bar img{
-    width: 70%;
-    height: auto;
 }
 
 .skryj{
@@ -99,44 +116,26 @@ body{
     color: var(--link-sideBar-clr);
  }
 
- .side_bar a:active,
- .side_bar a:focus,
- .side_bar a:hover{
-    color: var(--link-sideBar-clr);
- }
-
-a{
-    color: var(--main-clr);
-}
-a:hover,
-a:focus,
-a:active{
-    color: var(--link-sideBar-clr);
-}
-
-a.no_underline{
-    text-decoration: none;
-}
-
+ /* footer */
 footer{
     display: flex;
     flex-direction: column;
-    font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.7rem, 1.7vw, 1.5rem);
     padding: .5em;
     border-top: 2px solid var(--main-clr);
   /*   height: clamp(0.5rem, 10hw, 2rem); */
 }
 footer div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 0.5rem;
-    text-align: center;
 }
 footer div span{
-    margin-right: 1rem;
+    margin: 0 1rem 0.3rem 0;
 }
 
-
+/* flex additional setting */
 .flex_child {
     display: flex;
     align-items: center;
@@ -148,7 +147,12 @@ footer div span{
     flex-grow: 1;
   }
 
-  /* response */
+  /* response media */
+@media screen and (min-width: 350px) {
+    footer div{
+        flex-direction: row;
+    }
+}
   @media screen and (min-width: 600px) {
     .side_bar {
         display: block;
@@ -162,10 +166,16 @@ footer div span{
   }
 @media screen and (min-width: 810px) {
     footer{
+/*         position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(10, 21, 85, 0.7); */
         flex-direction: row-reverse;
+        justify-content: center;
     }
     footer div{
         flex-direction: column;
+        align-items: center;
         margin: 0 clamp(1rem, 5vw, 3rem);
     }
     footer div span{

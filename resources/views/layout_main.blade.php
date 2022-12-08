@@ -63,7 +63,7 @@
         </main>
 
     </div>
-    <footer class="flex_child">
+    <footer class="">
         <div class="act-date">
             <span>Dnes je:</span>
             <span>{{$dateTime}}</span>

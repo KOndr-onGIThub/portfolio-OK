@@ -27,7 +27,6 @@ address{
     margin-bottom: 1rem;
     filter: drop-shadow(3px 2px 3px #4444dd); /*(offset-x offset-y blur-radius color)*/
 }
-
 .cv_perex {
     display: flex;
     align-items: flex-start;
@@ -45,7 +44,6 @@ article{
     width: clamp(10rem, 60vw, 60rem);
     margin: 2rem auto;
 }
-
 article p, 
 article ul{
     margin: 0.8rem 0 2rem 0;
@@ -53,20 +51,21 @@ article ul{
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
 }
 
-h1{
+/* nadpisy */
+main h1{
     font-size: clamp(1.8em, 5vw, 4rem);
 }
-h3{
+main h3{
     font-weight: bold;
     font-size: clamp(1.6rem, 3vw, 2.5rem);
     margin-bottom: clamp(0.2rem, 1vw, 2rem);
 }
-h5{
+main h5{
     font-weight: bold;
     font-size: clamp(1.2rem, 2.5vw, 2rem);
     margin: 0 0 0.3rem 2rem;
 }
-h6{
+main h6{
     font-size: clamp(1rem, 2vw, 1.8rem);
     margin: 0 0 0.1rem 2rem;
 }
