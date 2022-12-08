@@ -1,18 +1,24 @@
 :root{
-    --sidebar-bg-clr: linear-gradient(135deg, rgb(31, 31, 31) 60%, rgb(160, 60, 60));
-    --asidebar-bg-clr: linear-gradient(45deg, rgb(31, 31, 31) 80%, rgb(160, 60, 60));
-    --body-bg-clr: radial-gradient(at 100% 100%, rgb(0, 0, 0)  5%, rgb(160, 60, 60) 10%, rgb(15, 15, 15) 10%);
+   /*  --sidebar-bg-clr: linear-gradient(351deg, rgba(18,2,61,1) 28%, rgba(53,28,120,1) 69%, rgba(0,0,0,1) 99%); */
+    --asidebar-bg-clr: #141414;
+    /* --body-bg-clr: radial-gradient(at 100% 100%, rgb(0, 0, 0)  5%, rgb(160, 60, 60) 10%, rgb(15, 15, 15) 10%); */
+    --body-bg-clr: linear-gradient(351deg, rgba(18,2,61,1) 28%, rgba(53,28,120,1) 69%, rgba(0,0,0,1) 99%);
+    --body-bg-clr-backup:rgb(18,2,61);
     --link-sideBar-clr: rgb(155, 184, 51);
+    --sidebar-clr: rgb(204, 204, 204);
+    --main-clr: rgb(204, 204, 204);
+    --boby-clr: rgb(204, 204, 204);
+
 }
 
 
-*, *:before, *:after{
+/* *, *:before, *:after{
     box-sizing: inherit;
-}
+} */
 
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, q, blockquote,
-a, p, u, em, i, b, strong, img,
+a, p, u, em, i, b, img,
 ol, ul, li,
 form, label, table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, footer, header, nav, section
@@ -24,16 +30,13 @@ article, aside, footer, header, nav, section
    vertical-align: baseline;
 }
 
-.side_bar h1, h2, h3, h4, h5, h6{
+.side_bar h3{
 text-transform: uppercase;
 }
 
-html, body{
-    height: 100%;
-    line-height: 1;
-}
-
-ol, ul , li{
+.side_bar ol, 
+.side_bar ul,
+.side_bar li{
     list-style: none;
     width: 100%;
     text-align: center;
@@ -42,20 +45,20 @@ ol, ul , li{
 body{
     display: flex;
     flex-direction: column;
+    line-height: 1;
     height: 100vh;
-    color: #fff;
-    font-family: Rockwell, "Courier Bold", Georgia, serif;
     background: var(--body-bg-clr);
-
+    color: var(--boby-clr);
 }
 
 
 .mine_content{
     flex-grow: 1;
+    color: var(--main-clr);
 }
 
 .boder_heder{
-    border: 1px solid black;
+    border: 1px solid var(--main-clr);
     margin: 0.5em;
     padding: 0.5em;
     text-align: center;
@@ -64,42 +67,51 @@ body{
 .side_bar {
     display: none;
     /* align-items: flex-start; */
-    background: var(--sidebar-bg-clr);
+    /* background: var(--sidebar-bg-clr); */
+    color: var(--sidebar-clr);
+    font-family: Rockwell, "Courier Bold", Georgia, serif;
     width: clamp(5rem, 20vw, 20rem);
-    font-size: clamp(0.8rem, 2vw, 2.5rem);
+    font-size: clamp(0.8rem, 2vw, 2rem);
     padding-top: 2rem;
   }
-  /* Resize images */
-.side_bar img{
-    width: 70%;
-    height: auto;
-}
 
 .aside_bar{
     background: var(--asidebar-bg-clr);
     width: clamp(1rem, 5vw, 3rem);
     font-size: clamp(0.5rem, 3vw, 3rem);
     text-align: center;
-    border-left: 2px solid rgb(22, 22, 22);
+    border-left: 1px solid rgb(0, 0, 0);
     padding-top: 2rem;
+}
+  /* Resize images */
+  .side_bar img{
+    width: 70%;
+    height: auto;
 }
 
 .skryj{
     cursor: pointer;
+    padding: 1rem .2rem;
  }
  .skryj:active,
  .skryj:focus,
  .skryj:hover{
     color: var(--link-sideBar-clr);
  }
- sidebar a:active,
- sidebar a:focus,
- sidebar a:hover{
+
+ .side_bar a:active,
+ .side_bar a:focus,
+ .side_bar a:hover{
     color: var(--link-sideBar-clr);
  }
 
-header a , li a{
-    color: rgb(204, 204, 204);
+a{
+    color: var(--main-clr);
+}
+a:hover,
+a:focus,
+a:active{
+    color: var(--link-sideBar-clr);
 }
 
 a.no_underline{
@@ -107,11 +119,23 @@ a.no_underline{
 }
 
 footer{
-    font-size: 1rem;
-    /* margin-top: auto; */
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.7rem, 2.5vw, 1.5rem);
     padding: .5em;
+    border-top: 2px solid var(--main-clr);
   /*   height: clamp(0.5rem, 10hw, 2rem); */
 }
+footer div{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0.5rem;
+    text-align: center;
+}
+footer div span{
+    margin-right: 1rem;
+}
+
 
 .flex_child {
     display: flex;
@@ -133,6 +157,18 @@ footer{
         display: none;
     }
     #chevron_left{
-display: block;
+        display: block;
     }
   }
+@media screen and (min-width: 810px) {
+    footer{
+        flex-direction: row-reverse;
+    }
+    footer div{
+        flex-direction: column;
+        margin: 0 clamp(1rem, 5vw, 3rem);
+    }
+    footer div span{
+        margin-right: 0;
+    }
+}

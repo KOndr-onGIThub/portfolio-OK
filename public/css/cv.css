@@ -1,0 +1,94 @@
+body{
+    height: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin: clamp(1rem, 10vw, 5rem) clamp(2rem, 5vw, 5rem) 2rem;
+}
+
+address{
+    padding: 1rem 0;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 clamp(0.3rem, 7vw, 7rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
+}
+
+  /* perex */
+  .cv_perex img{
+    width: clamp(5rem, 10vw, 10rem);
+    height: auto;
+    border-radius: 5%;
+    margin-right: clamp(0.3rem, 5vw, 5rem);
+    margin-bottom: 1rem;
+    filter: drop-shadow(3px 2px 3px #4444dd); /*(offset-x offset-y blur-radius color)*/
+}
+
+.cv_perex {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: clamp(10rem, 60vw, 60rem);
+    font-size: clamp(0.8rem, 3vw, 1.5rem);
+    margin: 2rem auto;
+}
+
+/* content */
+article{
+    display: flex;
+    flex-direction: column;
+    width: clamp(10rem, 60vw, 60rem);
+    margin: 2rem auto;
+}
+
+article p, 
+article ul{
+    margin: 0.8rem 0 2rem 0;
+    padding-left: 5rem;
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+}
+
+h1{
+    font-size: clamp(1.8em, 5vw, 4rem);
+}
+h3{
+    font-weight: bold;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    margin-bottom: clamp(0.2rem, 1vw, 2rem);
+}
+h5{
+    font-weight: bold;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    margin: 0 0 0.3rem 2rem;
+}
+h6{
+    font-size: clamp(1rem, 2vw, 1.8rem);
+    margin: 0 0 0.1rem 2rem;
+}
+
+/* media query */
+@media screen and (min-width: 810px) {
+    .cv_perex{
+        flex-direction: row;
+    }
+    header{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .cv_header h3{
+        margin-right: 5vw;
+    }
+    address{
+        flex-direction: row;
+        justify-content: center
+    }
+    address a{
+        margin-right: 1rem;
+    }
+}
