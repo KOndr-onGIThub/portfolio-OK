@@ -9,9 +9,12 @@
     <meta name="description" content="Osobní portfolio" />
     <meta name="author" content="Jméno autora" />
 
+    <link rel="shortcut icon" href="{{ asset('img/business_man_icon_black_32x32px.png') }}">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/layoutStyles.css" type="text/css">
     {{-- <link rel="stylesheet" href="fonts\fontawesome-free-6.2.1-web\css\fontawesome.min.css"> --}}
     <link rel="stylesheet" href="fonts\fontawesome-free-6.2.1-web\css\all.css">
