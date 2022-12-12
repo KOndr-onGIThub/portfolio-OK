@@ -15,7 +15,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Portfolio OK'),
+    'shortName' => env('APP_SHORT_NAME', 'OK'),
 
     /*
     |--------------------------------------------------------------------------
