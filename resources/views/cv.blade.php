@@ -1,6 +1,6 @@
 @extends('layout_main')
 
-@section('title','CV')
+@section('title',config('app.shortName')  . '-CV')
 
 @section('links')
 <link rel="stylesheet" href="css/cv.css" type="text/css">
@@ -33,9 +33,13 @@
         <img src="img/cv_ProfileFoto_preview.jpg" alt="profile photo for cv">
         
         <p>
-            Programování mě částečně provází celým dosavadním životem, ač jsem dosud na vyloženě programátorské pozici nepracoval. Jednoduché HTML stránky jsem tvořil již na škole a poté v prvním zaměstnání z dlouhé chvíle jako pomocný nástroj pro starší kolegy bez znalosti PC.
-            Nedávno se mi naskytla příležitost napsat PHP aplikaci, kterou jsem dříve vytvořil ve VBA v Excelu a která již nedostávala svým požadavkům.
-            Od té doby je pro mě programování nejen pracovní cíl.
+            Na papírově programátorské pozici jsem dosud nepracoval, 
+            ale reálně se programování stalo součástí má práce v r. 2020.
+            <br>
+            V té době jsem se nabídl, že vyvinu PHP aplikaci, 
+            kterou jsem dříve vytvořil ve VBA v Excelu a která již nedostávala svým požadavkům.
+            <br>
+            Baví mě to a chtěl bych plně pracovat jako developer a dále se v oboru zlepšovat. 
         </p>
     </section>
 
@@ -45,15 +49,20 @@
         <h6>2005 - současnost     Toyota Motor Manufacturing Czech Republic s.r.o.</h6>
         <p>
             Mou hlavní náplní je/bylo plánování a řízení toku materiálu 
-            interní logistikou a zavádění nových aplikac9 a systémů do procesů.
+            interní logistikou a zavádění nových aplikací a systémů do procesů.
             V r. 2020 jsem dostal možnost <strong>naprogramovat PHP aplikaci</strong>, 
             která dopomůže k hladkému přechodu výroby na nový model aut. 
-            A to díly tomu, že umožní mnohonásobně rychlejší a přesnější 
+            A to díky tomu, že umožní mnohonásobně rychlejší a efektivnější 
             řízení dodávek materiálu v krizových situacích.
             <br>
-            Aplikace se trvale využívá nadále.
+            Aplikace se trvale využívá nadále a to nejen k původnímu účelu.
             <br>
-            Pracoval jsme na ní kompletně sám jen s občasnou podporou od zkušeného kolegy z IS.
+            Pracoval jsme na aplikaci sám jen s občasnou podporou od zkušeného kolegy z IS.
+        </p>
+
+        <h5>V praxi využívám:</h5>
+        <p>
+            <strong>PHP - Laravel - JS - jQuery - PostgreSQL - MySQL - Ajax - API - CSS - responsive design - HTML - GIT - GitHub</strong>
         </p>
     </article>
 
@@ -61,8 +70,8 @@
         <h3>Odkazy na repo:</h3>
 
             <ul>
-                <li><a title="link to GitHub" href="https://github.com/KOndr-onGIThub/HCMS">HCMS</a>(Hot Call Management system)</li>
-                <li><a title="link within this page" href="/">Portfilio</a></li>
+                <li>HCMS <a title="GitHub" href="https://github.com/KOndr-onGIThub/HCMS" target="_blank" rel="noopener">repo na GitHubu</a></li>
+                <li>PORTFOLIO <a title="GitHub" href="https://github.com/KOndr-onGIThub/portfolio-OK" target="_blank" rel="noopener">repo na GitHubu</a> | <a title="link within this page" href="/">odkaz na aplikaci</a></li>
             </ul>
 
     </article>
