@@ -2,8 +2,8 @@ $(function(){
     
     var skryj = $(".skryj");
     var side_bar = $(".side_bar");
-    var chevron_right = $("#chevron_right");
-    var chevron_left = $("#chevron_left");
+    var chevron_right = $(".chevron_right");
+    var chevron_left = $(".chevron_left");
     
         skryj.click(function () {
 

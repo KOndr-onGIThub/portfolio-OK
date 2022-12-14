@@ -34,6 +34,7 @@ body{
     height: 100vh;
     background: var(--body-bg-clr);
     color: var(--boby-clr);
+    font-family: 'Ubuntu Mono', serif;
 }
 
 .mine_content{
@@ -67,7 +68,6 @@ a.no_underline{
     display: none;
     /* background: var(--sidebar-bg-clr); */
     color: var(--sidebar-clr);
-    font-family: Rockwell, "Courier Bold", Georgia, serif;
     width: clamp(5rem, 20vw, 20rem);
     font-size: clamp(0.8rem, 2vw, 2rem);
     padding-top: 2rem;
@@ -85,6 +85,13 @@ text-transform: uppercase;
     text-align: center;
 }
 
+.side_nav ul li{
+    margin: 1rem 0;
+}
+.side_nav ul li a{
+    padding: .2rem 0;
+}
+
 .side_bar img{
     width: 70%;
     height: auto;
@@ -99,8 +106,8 @@ text-transform: uppercase;
 /* asidebar */
 .aside_bar{
     background: var(--asidebar-bg-clr);
-    width: clamp(1rem, 5vw, 3rem);
-    font-size: clamp(0.5rem, 3vw, 3rem);
+    width: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(0.7rem, 3vw, 2.5rem);
     text-align: center;
     border-left: 1px solid rgb(0, 0, 0);
     padding-top: 2rem;
@@ -109,11 +116,20 @@ text-transform: uppercase;
 .skryj{
     cursor: pointer;
     padding: 1rem .2rem;
+
+ /*    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
  }
  .skryj:active,
  .skryj:focus,
  .skryj:hover{
     color: var(--link-sideBar-clr);
+ }
+
+ .nav_descr{
+    margin-bottom: 0.2rem;
  }
 
  /* footer */
@@ -148,7 +164,7 @@ footer div span{
   }
 
   /* response media */
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 400px) {
     footer div{
         flex-direction: row;
     }
@@ -157,10 +173,10 @@ footer div span{
     .side_bar {
         display: block;
     }
-    #chevron_right{
+    .chevron_right{
         display: none;
     }
-    #chevron_left{
+    .chevron_left{
         display: block;
     }
   }

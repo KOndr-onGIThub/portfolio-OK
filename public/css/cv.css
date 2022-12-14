@@ -56,12 +56,12 @@ main h1{
     font-size: clamp(1.8em, 5vw, 4rem);
 }
 main h3{
-    font-weight: bold;
+    font-weight: 700;
     font-size: clamp(1.6rem, 3vw, 2.5rem);
     margin-bottom: clamp(0.2rem, 1vw, 2rem);
 }
 main h5{
-    font-weight: bold;
+    font-weight: 700;
     font-size: clamp(1.2rem, 2.5vw, 2rem);
     margin: 0 0 0.3rem 2rem;
 }

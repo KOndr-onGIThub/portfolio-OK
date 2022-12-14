@@ -3,7 +3,8 @@
 @section('title',config('app.shortName')  . '-CV')
 
 @section('links')
-<link rel="stylesheet" href="css/cv.css" type="text/css">
+<link rel="stylesheet" href={{ asset('css/cv.css').'?'.env('APP_VERSION')}} type="text/css">
+
 @endsection
 
 @section('content')
@@ -34,7 +35,7 @@
         
         <p>
             Na papírově programátorské pozici jsem dosud nepracoval, 
-            ale reálně se programování stalo součástí má práce v r. 2020.
+            ale reálně se programování stalo součástí mé práce v r. 2020.
             <br>
             V té době jsem se nabídl, že vyvinu PHP aplikaci, 
             kterou jsem dříve vytvořil ve VBA v Excelu a která již nedostávala svým požadavkům.
