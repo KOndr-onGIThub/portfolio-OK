@@ -15,7 +15,7 @@ class MainController extends Controller
         return view('layout_main',compact('dateTime')); */
 
 
-        return view('layout_main');
+        return view('home');
     }
 
 }
