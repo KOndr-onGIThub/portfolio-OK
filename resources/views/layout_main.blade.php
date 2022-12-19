@@ -53,14 +53,7 @@
                     <li><a href="#4" class="no_underline">test</a></li>
                     <li><a href="#4" class="no_underline">test</a></li>
                     <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
+                    <li><a href="/kontakty" class="no_underline">Kontakty</a></li>
                 </ul>
             </nav>       
         </aside>
