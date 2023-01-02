@@ -13,6 +13,7 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href={{ asset('css/layoutStyles.css').'?'.env('APP_VERSION')}} type="text/css">
@@ -33,7 +34,7 @@
 </head>
 <body>
     <div class="main_wraper">
-        <aside class="side_bar">
+        <aside class="side_bar" id="side_bar">
             <header class="boder_heder">
             <a href="/" class="no_underline">
                 <img src="img/business_man_icon_grey.png" alt="avatar" />
@@ -42,7 +43,7 @@
             </header>
 
             <nav class="side_nav">
-                <ul>
+                <ul id="navUl">
                     <li><a href="/" class="no_underline">
                             <i class="fa fa-home fa-fw" aria-hidden="true"></i>Domů
                         </a>
@@ -55,7 +56,16 @@
                     <li><a href="#4" class="no_underline">test</a></li>
                     <li><a href="/kontakty" class="no_underline">Kontakty</a></li>
                 </ul>
-            </nav>       
+            </nav>
+            
+            
+                <a href="#side_bar" class="no_underline">
+                    <div class="go_to_top">
+                        <i class="fa fa-chevron-up"></i> <span class="nav_descr_horisont">MENU</span><i class="fa fa-chevron-up"></i>
+                    </div> 
+                </a>
+             
+
         </aside>
         <aside class="aside_bar">
             <div class="skryj" title="zobrazit/skrýt menu">
