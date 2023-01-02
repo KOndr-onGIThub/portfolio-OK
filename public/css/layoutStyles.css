@@ -26,6 +26,10 @@ article, aside, footer, header, nav, section
    vertical-align: baseline;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* body and main content */
 body{
     display: flex;
