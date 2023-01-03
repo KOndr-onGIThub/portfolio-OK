@@ -18,10 +18,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href={{ asset('css/layoutStyles.css').'?'.env('APP_VERSION')}} type="text/css">
     <link rel="stylesheet" href={{ asset('fonts\fontawesome-free-6.2.1-web\css\all.css').'?'.env('APP_VERSION')}}>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     {{-- <link rel="stylesheet" href={{ asset('fonts\fontawesome-free-6.2.1-web\css\fontawesome.min.css').'?'.env('APP_VERSION')}}> --}}
 
     @yield('links')
