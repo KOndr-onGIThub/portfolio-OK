@@ -28,7 +28,7 @@ main p{
     max-width: 60ch;
 }
 
-form, .contact_mail{
+form, .contact_mail, .contact_linkedin{
     margin-left: clamp(1rem, 5vw, 10vw);
     width: clamp(100px , 55vw, 810px);
 }
@@ -60,7 +60,7 @@ form button{
     box-shadow: 0.3rem 0.2rem 7px whitesmoke;
 }
 
-.contact_mail{
+.contact_mail, .contact_linkedin{
     font-weight: 400;
     font-size: clamp(1rem, 2vw, 3rem);
 }

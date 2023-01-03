@@ -49,5 +49,12 @@
         </a>
 
     </article>
+    <article>
+        <h3>linkedin</h3>
+        <a class="contact_linkedin" href="https://www.linkedin.com/in/ond%C5%99ej-kri%C5%A1ka-928ab1254/" 
+        target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i> linkedin
+        </a>
 
+    </article>
 @endsection
