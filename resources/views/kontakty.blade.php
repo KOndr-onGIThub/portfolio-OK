@@ -9,29 +9,45 @@
 
 @section('content')
 
-    <h1>Kontakt</h1>
+    <header>
+        <h1>Kontakty</h1>
+        <p>Předat vzkaz, dotaz, nahlásit chybu na stránce apod. můžete pomocí jedné z metod níže.</p>
+    </header>
 
-    <form action="kontakty" method="POST">
-        @csrf
+    <article class="kontact_form">
+        <h3>Kontaktní formulář</h3>
+        <form action="kontakty" method="POST">
+            @csrf
 
-        <div class="">
-            <div class="">
+            
+            <div class="form_group">
                 <label for="email">Vaše emailová adresa</label>
                 <input type="email" name="email" id="email" class="" value="{{ old('email') }}" required />
             </div>
-        </div>
+           
 
-        <div class="">
-            <label for="message">Zpráva (min 50 znaků)</label>
-            <textarea name="message" id="message" rows="10" class="" required minlength="50">{{ old('message') }}</textarea>
-        </div>
+            <div class="form_group">
+                <label for="message">Zpráva (min 50 znaků)</label>
+                <textarea name="message" id="message" rows="10" class="" required minlength="50">{{ old('message') }}</textarea>
+            </div>
 
-        <div class="">
-            <label for="year">Aktuální rok (antispam)</label>
-            <input type="number" name="year" id="year" class="" required />
-        </div>
+            <div class="form_group">
+                <label for="year">Aktuální rok (antispam)</label>
+                <input type="number" name="year" id="year" class="" required />
+            </div>
 
-        <button type="submit" class="">Odeslat</button>
-    </form>
+            <div class="form_group">
+                <button type="submit" class="">Odeslat</button>
+            </div>
+        
+        </form>
+    </article>
+    <article>
+        <h3>e-mail</h3>
+        <a class="contact_mail" href="mailto:info@itwebtech.cz">
+            <i class="fa fa-envelope"></i> info@itwebtech.cz
+        </a>
+
+    </article>
 
 @endsection
