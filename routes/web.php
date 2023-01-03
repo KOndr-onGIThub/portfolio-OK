@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/phpinfo', function () {
-    return view('info');
-});
 
 Route::get('/', 'App\Http\Controllers\MainController@index');
 

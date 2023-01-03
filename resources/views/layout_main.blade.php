@@ -98,7 +98,7 @@
         </div>
         <div class="versions-info">
             <span>Postaveno na Laravel:</span>
-            <span>v{{ Illuminate\Foundation\Application::VERSION }} (PHP v <a href={{ asset('/phpinfo')}}>{{ PHP_VERSION }}</a>)</span>
+            <span>v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</span>
         </div>
 
     </footer>
