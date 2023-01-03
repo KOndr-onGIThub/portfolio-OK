@@ -35,7 +35,6 @@ body{
     display: flex;
     flex-direction: column;
     line-height: 1;
-    height: 100vh;
     background: var(--body-bg-clr);
     color: var(--boby-clr);
     font-family: 'Ubuntu Mono', serif;
