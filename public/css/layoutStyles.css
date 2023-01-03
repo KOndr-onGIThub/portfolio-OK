@@ -5,7 +5,7 @@
     /* --body-bg-clr: radial-gradient(at 100% 100%, rgb(0, 0, 0)  5%, rgb(160, 60, 60) 10%, rgb(15, 15, 15) 10%); */
     --body-bg-clr: linear-gradient(351deg, rgba(18,2,61,1) 28%, rgba(53,28,120,1) 69%, rgba(0,0,0,1) 99%);
     --body-bg-clr-backup:rgb(18,2,61);
-    --link-sideBar-clr: rgb(155, 184, 51);
+    --link-sideBar-clr: gold;
     --sidebar-clr: rgb(204, 204, 204);
     --main-clr: rgb(204, 204, 204);
     --boby-clr: rgb(204, 204, 204);
@@ -50,9 +50,8 @@ a{
     color: var(--main-clr);
 }
 
-a:hover,
-a:focus,
-a:active{
+a:hover, a:focus, a:active,
+button:hover, button:focus, button:active{
     color: var(--link-sideBar-clr);
 }
 
@@ -173,7 +172,7 @@ footer div span{
 .main_wraper {
     display: flex;
     flex-grow: 1;
-  }
+}
 
   /* response media */
 @media screen and (min-width: 400px) {
@@ -181,7 +180,7 @@ footer div span{
         flex-direction: row;
     }
 }
-  @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .side_bar {
         display: block;
     }
@@ -194,7 +193,7 @@ footer div span{
     .nav_descr_horisont{
         display: block;
     }
-  }
+}
 @media screen and (min-width: 810px) {
     footer{
 /*         position: fixed;
