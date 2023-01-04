@@ -1,11 +1,11 @@
 $(function(){
     
-    var skryj = $(".skryj");
+    var aside_bar = $(".aside_bar");
     var side_bar = $(".side_bar");
 
         //ovladani zda je sidebar viditelny
-            skryj.click( function(){
-                manage_sideBar(side_bar, skryj)
+            aside_bar.click( function(){
+                manage_sideBar(side_bar)
             });
 
         //pri scrollu zobrazuji a posouvam ovladaci prvek navigace  ....
@@ -13,7 +13,7 @@ $(function(){
                 manage_goToTop(side_bar)
             });
         //.... a pri kliku take
-            skryj.click( function(){
+            aside_bar.click( function(){
                     manage_goToTop(side_bar)
             }); 
 
@@ -21,8 +21,9 @@ $(function(){
 
 // functions
     //ovladani zda je sidebar viditelny
-    function manage_sideBar(side_bar, skryj){
+    function manage_sideBar(side_bar){
 
+        let skryj = $(".skryj");
         let chevron_right = $(".chevron_right");
         let chevron_left = $(".chevron_left");
 
@@ -35,6 +36,7 @@ $(function(){
             chevron_left.css('display', 'block');
             chevron_right.css('display', 'none');
             skryj.attr('title', 'skrýt menu');
+            window.scrollTo(0, 0); //vyjedu hore pri zobrazeni, bo jsem mozna priliz dole pod jakoukoli nav a musel bych kliknout na dalsi tlacitko abych se hore dostal
         }
         side_bar.animate({
             width: "toggle"

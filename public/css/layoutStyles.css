@@ -121,6 +121,7 @@ text-transform: uppercase;
 
 /* asidebar */
 .aside_bar{
+    cursor: pointer;
     background: var(--asidebar-bg-clr);
     width: clamp(1.5rem, 5vw, 3rem);
     font-size: clamp(0.7rem, 3vw, 2.5rem);
@@ -132,12 +133,13 @@ text-transform: uppercase;
 .skryj{
     cursor: pointer;
     padding: 1rem .2rem;
- }
- .skryj:active,
- .skryj:focus,
- .skryj:hover{
-    color: var(--link-sideBar-clr);
- }
+    position: sticky;
+    top: 35px;
+}
+.skryj:active, .skryj:focus, .skryj:hover,
+.aside_bar:active, .aside_bar:focus, .aside_bar:hover{
+color: var(--link-sideBar-clr);
+}
 
  .nav_descr{
     margin-bottom: 0.2rem;
