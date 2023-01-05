@@ -19,8 +19,8 @@
             <i class="fa fa-phone"></i> (+420) 728 697 712
 
         </a>
-        <a class="cv_mail" href="mailto:kriska.ondrej@seznam.cz">
-            <i class="fa fa-envelope"></i> kriska.ondrej@seznam.cz
+        <a class="cv_mail" href="mailto:info@itwebtech.cz">
+            <i class="fa fa-envelope"></i> info@itwebtech.cz
         </a>
         
         <a class="cv_linkedin" href="https://www.linkedin.com/in/ond%C5%99ej-kri%C5%A1ka-928ab1254/" 

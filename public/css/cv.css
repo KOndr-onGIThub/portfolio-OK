@@ -14,7 +14,6 @@ address{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 0 clamp(0.3rem, 7vw, 7rem);
     font-size: clamp(1rem, 2vw, 1.8rem);
 }
 
@@ -34,6 +33,9 @@ address{
     flex-direction: column;
     width: clamp(10rem, 60vw, 60rem);
     font-size: clamp(0.8rem, 3vw, 1.5rem);
+}
+
+.cv_perex, article {
     margin: 2rem auto;
 }
 
@@ -42,12 +44,12 @@ article{
     display: flex;
     flex-direction: column;
     width: clamp(10rem, 60vw, 60rem);
-    margin: 2rem auto;
+    border-top: 2px solid rgba(0,0,0,0.4);
+    padding-top: 1rem;
 }
 article p, 
 article ul{
     margin: 0.8rem 0 2rem 0;
-    padding-left: 5rem;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
 }
 
@@ -85,7 +87,7 @@ main h6{
     }
     address{
         flex-direction: row;
-        justify-content: center
+        justify-content: space-evenly;
     }
     address a{
         margin-right: 1rem;
