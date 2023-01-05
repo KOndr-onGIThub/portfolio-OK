@@ -30,7 +30,7 @@
 <article>
     <h3>Na čem budu dělat...</h3>
     <p> 
-        <i>To definitivně nelze dopředu vědět, ale "chci dělat" není jaksi dost motivující a zavazující :) </i>
+        <i>To definitivně nelze dopředu vědět, ale "chci dělat" není jaksi dost motivující a zavazující :) </i><br>
         React - Angular - Java, ...
     </p>
 </article>

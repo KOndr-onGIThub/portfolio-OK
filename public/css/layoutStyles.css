@@ -200,6 +200,9 @@ main{
     .nav_descr_horisont{
         display: block;
     }
+    .break{
+        display: none;
+    }
 }
 @media screen and (min-width: 810px) {
     footer{

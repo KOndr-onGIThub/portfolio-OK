@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href={{ asset('css/layoutStyles.css').'?'.env('APP_VERSION')}} type="text/css">
     <link rel="stylesheet" href={{ asset('fonts\fontawesome-free-6.2.1-web\css\all.css').'?'.env('APP_VERSION')}}>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d904f22f50.js" crossorigin="anonymous"></script>
     
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -45,16 +45,19 @@
             <nav class="side_nav">
                 <ul id="navUl">
                     <li><a href="/" class="no_underline">
-                            <i class="fa fa-home fa-fw" aria-hidden="true"></i>Domů
+                        <i class="fa-solid fa-house"></i><br class="break">
+                            Domů
                         </a>
                     </li>
-                    <li><a href="/cv" class="no_underline">Životopis (CV)</a></li>
-                    <li><a href="#3" class="no_underline"></a><i class="fa fa-twitter"></i></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="#4" class="no_underline">test</a></li>
-                    <li><a href="/kontakty" class="no_underline">Kontakty</a></li>
+                    <li><a href="/kontakty" class="no_underline">
+                        <i class="fa fa-address-card-o" aria-hidden="true"></i><br class="break">
+                            Kontakty
+                        </a>
+                    </li>
+                    <li><a href="/cv" class="no_underline">
+                        <i class="fa-sharp fa-solid fa-heart-pulse"></i><br class="break">
+                            Životopis (CV)
+                    </a></li>
                 </ul>
             </nav>
             

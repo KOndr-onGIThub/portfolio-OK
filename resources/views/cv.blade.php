@@ -16,16 +16,16 @@
     </header>
     <address class="cv_contactList">
         <a class="cv_phoneNo" href="tel:+420728697712">
-            <i class="fa fa-phone"></i> (+420) 728 697 712
+            <i class="fa-solid fa-phone"></i></i> (+420) 728 697 712
 
         </a>
         <a class="cv_mail" href="mailto:info@itwebtech.cz">
-            <i class="fa fa-envelope"></i> info@itwebtech.cz
+            <i class="fa-solid fa-envelope"></i> info@itwebtech.cz
         </a>
         
         <a class="cv_linkedin" href="https://www.linkedin.com/in/ond%C5%99ej-kri%C5%A1ka-928ab1254/" 
         target="_blank" rel="noopener">
-        <i class="fa fa-linkedin"></i> linkedin
+        <i class="fa fa-linkedin" aria-hidden="true"></i> linkedin
         </a>
     </address>
 
