@@ -36,7 +36,7 @@
     <div class="main_wraper">
         <aside class="side_bar" id="side_bar">
             <header class="boder_heder">
-            <a href="/" class="no_underline">
+            <a href="{{ url('/') }}" class="no_underline">
                 <img src="img/business_man_icon_grey.png" alt="avatar" />
                 <h3>Ondra Kriška</h3>
             </a>
@@ -44,17 +44,22 @@
 
             <nav class="side_nav">
                 <ul id="navUl">
-                    <li><a href="/" class="no_underline">
+                    <li><a href="{{ url('/') }}" class="no_underline">
                         <i class="fa-solid fa-house"></i><br class="break">
                             Domů
                         </a>
                     </li>
-                    <li><a href="/kontakty" class="no_underline">
+                    <li><a href="{{ url('kdeseucim') }}" class="no_underline">
+                        <i class="fa-sharp fa-solid fa-graduation-cap"></i><br class="break">
+                            Kde se učím
+                        </a>
+                    </li>
+                    <li><a href="{{ url('kontakty') }}" class="no_underline">
                         <i class="fa fa-address-card-o" aria-hidden="true"></i><br class="break">
                             Kontakty
                         </a>
                     </li>
-                    <li><a href="/cv" class="no_underline">
+                    <li><a href="{{ url('cv') }}" class="no_underline">
                         <i class="fa-sharp fa-solid fa-heart-pulse"></i><br class="break">
                             Životopis (CV)
                     </a></li>

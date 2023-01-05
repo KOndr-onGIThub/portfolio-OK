@@ -41,6 +41,11 @@ body{
     min-height: 100vh;
 }
 
+main{
+    margin: 3rem clamp(1rem, 4vw, 50rem) 2rem clamp(1rem, 7vw, 20rem);
+    max-width: 1800px; /* dale omezeno v jednotlivych css k danym strankám, je-li treba */
+}
+
 .mine_content{
     flex-grow: 1;
     color: var(--main-clr);
@@ -169,11 +174,6 @@ footer div span{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-main{
-    margin: 3rem clamp(1rem, 4vw, 50rem) 2rem clamp(1rem, 7vw, 20rem);
-    max-width: 1800px;
 }
 
 .main_wraper {
