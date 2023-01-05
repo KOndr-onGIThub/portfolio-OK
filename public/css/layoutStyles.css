@@ -55,6 +55,7 @@ a{
     color: var(--main-clr);
 }
 
+
 a:hover, a:focus, a:active,
 button:hover, button:focus, button:active{
     color: var(--link-sideBar-clr);
@@ -202,6 +203,16 @@ footer div span{
     }
     .break{
         display: none;
+    }
+    nav ul li a{
+        text-align: end;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    nav ul li a i{
+margin-right: 5px;
     }
 }
 @media screen and (min-width: 810px) {
