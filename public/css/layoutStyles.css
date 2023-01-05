@@ -171,6 +171,11 @@ footer div span{
     justify-content: center;
 }
 
+main{
+    margin: 3rem clamp(1rem, 4vw, 50rem) 2rem clamp(1rem, 7vw, 20rem);
+    max-width: 1800px;
+}
+
 .main_wraper {
     display: flex;
     flex-grow: 1;

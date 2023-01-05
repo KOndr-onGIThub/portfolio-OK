@@ -10,30 +10,30 @@
 @section('content')
 
     <header>
-        <h1>Kontakty</h1>
+        <h1>kontakty</h1>
         <p>Předat vzkaz, dotaz, nahlásit chybu na stránce apod. můžete pomocí jedné z metod níže.</p>
     </header>
 
     <article class="kontact_form">
-        <h3>Kontaktní formulář</h3>
+        <h3>kontaktní formulář</h3>
         <form action="kontakty" method="POST">
             @csrf
 
             
             <div class="form_group">
                 <label for="email">Vaše emailová adresa</label>
-                <input type="email" name="email" id="email" class="" value="{{ old('email') }}" required />
+                <input type="email" name="email" id="email" class="input_email" value="{{ old('email') }}" required />
             </div>
            
 
             <div class="form_group">
                 <label for="message">Zpráva (min 50 znaků)</label>
-                <textarea name="message" id="message" rows="10" class="" required minlength="50">{{ old('message') }}</textarea>
+                <textarea name="message" id="message" rows="10" class="textarea_message" required minlength="50">{{ old('message') }}</textarea>
             </div>
 
             <div class="form_group">
                 <label for="year">Aktuální rok (antispam)</label>
-                <input type="number" name="year" id="year" class="" required />
+                <input type="number" name="year" id="year" class="input_atispam" required />
             </div>
 
             <div class="form_group">
