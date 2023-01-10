@@ -1,4 +1,8 @@
-/* variables */
+main{
+/*   display: flex;
+  flex-direction: column; */
+  max-width: 1200px;
+}
 
 .projects_nav {
   margin-bottom: 2rem;
@@ -7,4 +11,45 @@
 .projects_nav a{
   margin-right: 1rem;
   padding: 0 0.5rem;
+}
+
+main h1{
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3vw, 2.7rem);
+  margin-top: clamp(0.2rem, 1vw, 2rem);
+  margin-bottom: .5rem;
+}
+
+main h2{
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw, 2.5rem);
+  margin-top: clamp(0.4rem, 1vw, 2rem);
+  margin-bottom: .2rem;
+}
+
+main h4{
+  font-weight: 500;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  margin-top: clamp(0.4rem, 1vw, 2rem);
+  margin-bottom: .2rem;
+  padding-left: 1rem;
+}
+
+article{
+  margin: 0.8rem 1rem 1.5rem clamp(0.8rem, 3vw, 3rem); 
+  padding-top: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+p{
+  padding-left: 3rem;
+}
+
+code {
+  background-color: #333333;
+  border: 1px solid #999;
+  display: block;
+  max-width: min(60vw, 810px);
+/*   padding: 10px; */
+  overflow: auto;
 }
