@@ -1,0 +1,10 @@
+/* variables */
+
+.projects_nav {
+  margin-bottom: 2rem;
+}
+
+.projects_nav a{
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+}

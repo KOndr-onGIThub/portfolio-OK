@@ -54,6 +54,11 @@
                             Kde se učím
                         </a>
                     </li>
+                    <li><a href="{{ url('projects') }}" class="no_underline">
+                        <i class="fa-solid fa-horse-head"></i><br class="break">
+                            Projekty
+                        </a>
+                    </li>
                     <li><a href="{{ url('kontakty') }}" class="no_underline">
                         <i class="fa fa-address-card-o" aria-hidden="true"></i><br class="break">
                             Kontakty
