@@ -1,5 +1,9 @@
+.kontakty_content{
+    max-width: 1000px;
+    margin: auto;
+}
 
-header{
+.kontakty_header{
     display: flex;
     flex-direction: column;
     margin: 1rem 1rem 2rem clamp(2rem, 5vw, 50rem); 
@@ -63,7 +67,7 @@ form button{
 
 .contact_mail, .contact_linkedin{
     font-weight: 400;
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 
 .input_email, .input_atispam{

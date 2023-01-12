@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate"> {{-- nevyskakovani nabidky prekladu --}}
 
-    <meta name="description" content="Osobní portfolio">
+    <meta name="description" content="ITWEBTECH">
     <meta name="author" content="Ondrej Kriska">
 
     <link rel="shortcut icon" href="{{ asset('img/business_man_icon_black_32x32px.png').'?'.env('APP_VERSION')}} }}">
@@ -17,103 +17,108 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href={{ asset('css/layoutStyles.css').'?'.env('APP_VERSION')}} type="text/css">
-    <link rel="stylesheet" href={{ asset('fonts\fontawesome-free-6.2.1-web\css\all.css').'?'.env('APP_VERSION')}}>
+    <link rel="stylesheet" href={{ asset('fonts\fontawesome-free-6.2.1-web\css\all.css')}}>
     <script src="https://kit.fontawesome.com/d904f22f50.js" crossorigin="anonymous"></script>
     
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    {{-- <link rel="stylesheet" href={{ asset('fonts\fontawesome-free-6.2.1-web\css\fontawesome.min.css').'?'.env('APP_VERSION')}}> --}}
+
 
     @yield('links')
 
     <!-- JS -->
-    <script src="js/side_bar.js"></script>
+    {{-- <script src="js/side_bar.js"></script> --}}
 
 
     <title>@yield('title', env('APP_NAME'))</title>
 </head>
-<body>
-    <div class="main_wraper">
-        <aside class="side_bar" id="side_bar">
-            <header class="boder_heder">
-            <a href="{{ url('/') }}" class="no_underline">
-                <img src="img/business_man_icon_grey.png" alt="avatar" />
-                <h3>Ondra Kriška</h3>
-            </a>
+<body id="top">
+
+    <div class="wrap_no_footer">
+        <div class="boder_header-nav_bar">
+            <header class="header">
+                <a href="{{ url('/') }}" class="no_underline">
+                    <span class="go_home">
+                        <img src="img/business_man_icon_grey.png" alt="avatar" />
+                        <span>it <br> web <br> tech</span>
+                    </span>
+                </a>
             </header>
 
-            <nav class="side_nav">
-                <ul id="navUl">
-                    <li><a href="{{ url('/') }}" class="no_underline">
-                        <i class="fa-solid fa-house"></i><br class="break">
+            <nav class="nav_bar">
+                    <span><a href="{{ url('/') }}" class="no_underline" title="na hlavní stránku">
+                        <i class="fa-solid fa-house"></i>{{-- <br class="break"> --}}
                             Domů
                         </a>
-                    </li>
-                    <li><a href="{{ url('kdeseucim') }}" class="no_underline">
-                        <i class="fa-sharp fa-solid fa-graduation-cap"></i><br class="break">
-                            Kde se učím
+                    </span>
+                    <span><a href="{{ url('kdeseucim') }}" class="no_underline" title="mnou používané zdroje s obsahem pro programátory">
+                        <i class="fa-sharp fa-solid fa-graduation-cap"></i>{{-- <br class="break"> --}}
+                            Kde se učit
                         </a>
-                    </li>
-                    <li><a href="{{ url('projects') }}" class="no_underline">
-                        <i class="fa-solid fa-horse-head"></i><br class="break">
+                    </span>
+                    <span><a href="{{ url('projects') }}" class="no_underline" title="příklady projektů na kterých jsme dělal / dělám">
+                        <i class="fa-solid fa-horse-head"></i>{{-- <br class="break"> --}}
                             Projekty
                         </a>
-                    </li>
-                    <li><a href="{{ url('kontakty') }}" class="no_underline">
-                        <i class="fa fa-address-card-o" aria-hidden="true"></i><br class="break">
+                    </span>
+                    <span><a href="{{ url('kontakty') }}" class="no_underline" title="kontaktní formulář a další kontaktní informace">
+                        <i class="fa fa-address-card-o" aria-hidden="true"></i>{{-- <br class="break"> --}}
                             Kontakty
                         </a>
-                    </li>
-                    <li><a href="{{ url('cv') }}" class="no_underline">
-                        <i class="fa-sharp fa-solid fa-heart-pulse"></i><br class="break">
+                    </span>
+                    <span><a href="{{ url('cv') }}" class="no_underline" title="stručný profesní životopis">
+                        <i class="fa-sharp fa-solid fa-heart-pulse"></i>{{-- <br class="break"> --}}
                             Životopis (CV)
-                    </a></li>
-                </ul>
+                    </a></span>
             </nav>
-            
-            
-                <a href="#side_bar" class="no_underline">
-                    <div class="go_to_top">
-                        <i class="fa fa-chevron-up"></i> <span class="nav_descr_horisont">MENU</span><i class="fa fa-chevron-up"></i>
-                    </div> 
-                </a>
-             
+        </div>
 
-        </aside>
-        <aside class="aside_bar">
-            <div class="skryj" title="zobrazit/skrýt menu">
-                    <div class="chevron_right"><i class="fa fa-chevron-right"></i></div>
-                    <div class="chevron_left" hidden><i class="fa fa-chevron-left"></i></div>
-                    <div class="nav_descr">
-                        M<br>
-                        E<br>
-                        N<br>
-                        U<br>
-                    </div>
-                    <div class="chevron_right"><i class="fa fa-chevron-right"></i></div>
-                    <div class="chevron_left" hidden><i class="fa fa-chevron-left"></i></div>
-            </div>
-        </aside> 
-        
+
+
+        <nav class="nav_panel">
+            <a class="no_underline" href="#top">
+                    <span class="chevron_up"><i class="fa fa-chevron-up"></i></span>
+                    <span class="nav_descr">{{env('APP_NAME')}}</span>
+                    <span class="chevron_up"><i class="fa fa-chevron-up"></i></span>
+                </a>
+        </nav> 
+    
+
         <main class="mine_content">
-            @yield('content', 'žádný obsah nenalezen')
+
+          @yield('content', 'žádný obsah nenalezen')
+
         </main>
 
     </div>
+
     <footer class="">
-        <div class="act-date">
-            <span>Dnes je:</span>
-            <span>{{$dateTime}}</span>
+        <div class="footer_contacts">
+
+            <span>
+                <a href="{{ url('kontakty') }}" class="no_underline" title="kontaktní formulář a další kontaktní informace">
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                    TEXT ME
+                    </a>
+            </span>
+            <span>
+                <a href="tel:+420728697712" class="no_underline">
+                    <i class="fa-solid fa-phone"></i></i> 
+                    (+420) 728 697 712
+                </a>
+            </span>
         </div>
         <div class="app-ver">
-            <span>Poslední aktualizace této stránky:</span>
-            <span>{{env('APP_LAST_UPDATE', 'viz .env')}} na verzi {{env('APP_VERSION', 'viz .env')}}</span>
+            <span>Page updated:</span>
+            <span>{{env('APP_LAST_UPDATE', 'viz .env')}} v{{env('APP_VERSION', 'viz .env')}}</span>
         </div>
         <div class="versions-info">
-            <span>Postaveno na Laravel:</span>
+            <span>Built in Laravel:</span>
             <span>v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</span>
         </div>
 
     </footer>
+
+
 </body>
 </html>

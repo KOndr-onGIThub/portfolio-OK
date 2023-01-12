@@ -1,15 +1,15 @@
 /* variables */
 :root{
-   /*  --sidebar-bg-clr: linear-gradient(351deg, rgba(18,2,61,1) 28%, rgba(53,28,120,1) 69%, rgba(0,0,0,1) 99%); */
-    --asidebar-bg-clr: #141414;
+    --asidebar-bg-clr: rgb(0, 0, 100);
     /* --body-bg-clr: radial-gradient(at 100% 100%, rgb(0, 0, 0)  5%, rgb(160, 60, 60) 10%, rgb(15, 15, 15) 10%); */
-    --body-bg-clr: linear-gradient(351deg, rgba(18,2,61,1) 28%, rgba(53,28,120,1) 69%, rgba(0,0,0,1) 99%);
-    --body-bg-clr-backup:rgb(18,2,61);
-    --link-sideBar-clr: gold;
-    --sidebar-clr: rgb(204, 204, 204);
-    --main-clr: rgb(204, 204, 204);
-    --boby-clr: rgb(204, 204, 204);
+    --body-bg-clr: rgb(250, 250, 250);
+    --link-sideBar-clr: rgb(158, 134, 0);
+    --main-clr: rgb(0, 0, 80);
+    --main-clr_rev: rgb(204, 204, 204);
+    --nav-panel-height: clamp(0.7rem, 3vw, 2rem); /* is used for project nav offset as well */
 }
+
+
 
 /* default setting for basic elements */
 html, body, div, span,
@@ -25,131 +25,93 @@ article, aside, footer, header, nav, section
    font: inherit;
    vertical-align: baseline;
 }
-
 html{
     scroll-behavior: smooth;
 }
 
-/* body and main content */
+
+
+/* body */
 body{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     line-height: 1;
     background: var(--body-bg-clr);
-    color: var(--boby-clr);
     font-family: 'Ubuntu Mono', serif;
     min-height: 100vh;
 }
 
-main{
-    margin: 3rem clamp(1rem, 4vw, 50rem) 2rem clamp(1rem, 7vw, 20rem);
-    max-width: 1800px; /* dale omezeno v jednotlivych css k danym strankám, je-li treba */
+
+
+/*   header*/
+header{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size:  clamp(1rem, 3vw, 2rem);
+    border-top: 3px solid var(--asidebar-bg-clr);
+}
+header img{
+    width: clamp(64px, 10vw, 128px);  
+    height: auto;
+}
+.go_home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.mine_content{
-    flex-grow: 1;
-    color: var(--main-clr);
-}
 
+
+/**links */ 
 a{
     color: var(--main-clr);
 }
-
-
 a:hover, a:focus, a:active,
 button:hover, button:focus, button:active{
     color: var(--link-sideBar-clr);
 }
-
 a.no_underline{
     text-decoration: none;
 }
 
-/* sidebar */
-.boder_heder{
-    border: 1px solid var(--main-clr);
-    margin: 0.5em;
-    padding: 0.5em;
-    text-align: center;
+
+/**navigation */
+.nav_bar {
+    display: flex;
+    gap: 0.5rem 1.5rem; /* row-gap column gap */
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    font-size:  clamp(1rem, 3vw, 2rem);
+    background-color: rgb(214, 212, 212);
+    padding: 0.5rem;
 }
 
-.side_bar {
-    display: none;
-    /* background: var(--sidebar-bg-clr); */
-    color: var(--sidebar-clr);
-    width: clamp(5rem, 20vw, 20rem);
-    font-size: clamp(0.8rem, 2vw, 2rem);
-    padding-top: 2rem;
-}
 
-.side_bar h3{
-text-transform: uppercase;
-}
 
-.side_bar ol, 
-.side_bar ul,
-.side_bar li{
-    list-style: none;
-    width: 100%;
-    text-align: center;
-}
-
-.side_nav ul li{
-    margin: 1rem 0;
-}
-.side_nav ul li a{
-    padding: .2rem 0;
-}
-
-.side_bar header img{
-    width: 70%;
-    height: auto;
-}
-
-.side_bar a:active,
-.side_bar a:focus,
-.side_bar a:hover{
-   color: var(--link-sideBar-clr);
-}
-
-.go_to_top{
-    position: relative; /* rest (top argument) is managed by JS*/
-    text-align: center;
-/*     display: flex;
-    justify-content: space-between; */ /*placed to JS*/
-    padding: .5rem ;
-    background: var(--asidebar-bg-clr);
-    display: none;
-}
-.nav_descr_horisont{
-    display: none;
-}
-
-/* asidebar */
-.aside_bar{
+/* nav panel */
+.nav_panel{
     cursor: pointer;
     background: var(--asidebar-bg-clr);
-    width: clamp(1.5rem, 5vw, 3rem);
-    font-size: clamp(0.7rem, 3vw, 2.5rem);
+    font-size: var(--nav-panel-height);
     text-align: center;
-   /*  border-left: 1px solid rgb(0, 0, 0); */
-    padding-top: 2rem;
-}
-
-.skryj{
-    cursor: pointer;
-    padding: 1rem .2rem;
     position: sticky;
-    top: 35px;
+    top: 0;
 }
-.skryj:active, .skryj:focus, .skryj:hover,
-.aside_bar:active, .aside_bar:focus, .aside_bar:hover{
-color: var(--link-sideBar-clr);
+.nav_panel a{
+    color: var(--main-clr_rev);
 }
 
- .nav_descr{
-    margin-bottom: 0.2rem;
- }
+
+/**main content */
+.mine_content{
+    color: var(--main-clr);
+    padding: 1rem 0.5rem;
+}
+
+
 
  /* footer */
 footer{
@@ -158,69 +120,42 @@ footer{
     font-size: clamp(0.7rem, 1.7vw, 1.5rem);
     padding: .5em;
     border-top: 2px solid var(--main-clr);
-  /*   height: clamp(0.5rem, 10hw, 2rem); */
+
 }
 footer div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 0.5rem;
 }
 footer div span{
     margin: 0 1rem 0.3rem 0;
 }
 
-/* flex additional setting */
-.flex_child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.main_wraper {
-    display: flex;
-    flex-grow: 1;
-}
 
-  /* response media */
-@media screen and (min-width: 400px) {
+/* response media */
+@media screen and (min-width: 300px) {
     footer div{
         flex-direction: row;
     }
 }
 @media screen and (min-width: 600px) {
-    .side_bar {
-        display: block;
+    footer{
+        flex-direction: row-reverse;
+        justify-content: center;
     }
-    .chevron_right{
-        display: none;
-    }
-    .chevron_left{
-        display: block;
-    }
-    .nav_descr_horisont{
-        display: block;
-    }
-    .break{
-        display: none;
-    }
-    nav ul li a{
-        text-align: end;
-        display: flex;
-        justify-content: space-between;
+    footer div{
+        flex-direction: column;
         align-items: center;
-        margin: 0 1rem;
+        margin: 0 clamp(1rem, 5vw, 3rem);
     }
-    nav ul li a i{
-margin-right: 5px;
-    }
+/*     .break{
+        display: none;
+    } */
 }
 @media screen and (min-width: 810px) {
-    footer{
-/*         position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: rgba(10, 21, 85, 0.7); */
+/*     footer{
         flex-direction: row-reverse;
         justify-content: center;
     }
@@ -231,5 +166,5 @@ margin-right: 5px;
     }
     footer div span{
         margin-right: 0;
-    }
+    } */
 }

@@ -1,16 +1,21 @@
-main{
-/*   display: flex;
-  flex-direction: column; */
-  max-width: 1200px;
+.project_content{
+  max-width: 1000px;
+  margin: auto;
 }
 
 .projects_nav {
   margin-bottom: 2rem;
+  position: sticky;
+  top: var(--nav-panel-height);
+  background-color: black;
 }
 
 .projects_nav a{
   margin-right: 1rem;
   padding: 0 0.5rem;
+  font-weight: 400;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  color: var(--main-clr_rev);
 }
 
 main h1{
@@ -23,7 +28,7 @@ main h1{
 main h2{
   font-weight: 700;
   font-size: clamp(1.3rem, 3vw, 2.5rem);
-  margin-top: clamp(0.4rem, 1vw, 2rem);
+  padding-top: 10vh;
   margin-bottom: .2rem;
 }
 
@@ -38,7 +43,8 @@ main h4{
 article{
   margin: 0.8rem 1rem 1.5rem clamp(0.8rem, 3vw, 3rem); 
   padding-top: 1rem;
-  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  border-top: 2px solid rgba(5, 5, 5, 0.4);
+  min-height: 100vh;
 }
 
 p{

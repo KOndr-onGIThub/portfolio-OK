@@ -25,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // AKTUÁLNÍ DATUM K DISPOZICI NA VŠECH VIEWS
         $dateTime = DateUtils::formatDate( date("Y-m-d H:i:s") );
         View::share('dateTime', $dateTime);
     }

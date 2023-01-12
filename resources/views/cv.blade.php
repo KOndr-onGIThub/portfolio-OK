@@ -10,22 +10,27 @@
 @section('content')
 
 
-    <header class="cv_header">
+    <section class="cv_header">
         <h1>Ondřej Kriška</h1>
-        <h3>junior developer PHP, JS, HTML</h3>
-    </header>
+        <h3>web application developer</h3>
+    </section>
     <address class="cv_contactList">
-        <a class="cv_phoneNo" href="tel:+420728697712">
+        <a class="no_underline cv_phoneNo" href="tel:+420728697712">
             <i class="fa-solid fa-phone"></i></i> (+420) 728 697 712
 
         </a>
-        <a class="cv_mail" href="mailto:info@itwebtech.cz">
+        <a class="no_underline cv_mail" href="mailto:info@itwebtech.cz">
             <i class="fa-solid fa-envelope"></i> info@itwebtech.cz
         </a>
         
-        <a class="cv_linkedin" href="https://www.linkedin.com/in/ond%C5%99ej-kri%C5%A1ka-928ab1254/" 
+        <a class="no_underline cv_linkedin" href="https://www.linkedin.com/in/ond%C5%99ej-kri%C5%A1ka-928ab1254/" 
         target="_blank" rel="noopener">
         <i class="fa fa-linkedin" aria-hidden="true"></i> linkedin
+        </a>
+
+        <a class="no_underline cv_web" href="https://itwebtech.cz/" 
+        rel="noopener">
+        <i class="fa fa-globe" aria-hidden="true"></i> web
         </a>
     </address>
 
@@ -34,13 +39,15 @@
         <img src="img/cv_ProfileFoto_preview.jpg" alt="profile photo for cv">
         
         <p>
-            Na papírově programátorské pozici jsem dosud nepracoval, 
+            Na papírově programátorské pozici jsem dosud zaměstnán nebyl, 
             ale reálně se programování stalo součástí mé práce v r. 2020.
             <br>
-            V té době jsem se nabídl, že vyvinu PHP aplikaci, 
-            kterou jsem dříve vytvořil ve VBA v Excelu a která již nedostávala svým požadavkům.
+            V té době jsem začal vyvýjet Laravel PHP aplikaci, 
+            jako náhradu Excel aplikace, kterou jsem vytvořil dříve, ale již nedostávala svým požadavkům.
             <br>
-            Baví mě to a chtěl bych plně pracovat jako developer a dále se v oboru zlepšovat. 
+            Nedostával jsem ale až tolik prostroru k programování, kolik bych chtěl. 
+            <br>
+            A proto v současnosti hledám jiné způsoby, jak se programování věnovat naplno.
         </p>
     </section>
 
@@ -49,16 +56,11 @@
         <h5>Specialista interní logistiky / Programátor</h5>
         <h6>2005 - současnost     Toyota Motor Manufacturing Czech Republic s.r.o.</h6>
         <p>
-            Mou hlavní náplní je/bylo plánování a řízení toku materiálu 
+            Hlavní náplň: plánování a řízení toku materiálu 
             interní logistikou a zavádění nových aplikací a systémů do procesů.
-            V r. 2020 jsem dostal možnost <strong>naprogramovat PHP aplikaci</strong>, 
-            která dopomůže k hladkému přechodu výroby na nový model aut. 
-            A to díky tomu, že umožní mnohonásobně rychlejší a efektivnější 
-            řízení dodávek materiálu v krizových situacích.
             <br>
-            Aplikace se trvale využívá nadále a to nejen k původnímu účelu.
-            <br>
-            Pracoval jsme na aplikaci sám jen s občasnou podporou od zkušeného kolegy z IS.
+            Od r. 2020 <strong>programování Laravel aplikace</strong>, 
+            pro rostoucí potřeby oddělení logistiky.
         </p>
 
         <h5>V praxi využívám:</h5>

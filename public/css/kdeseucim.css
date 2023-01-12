@@ -1,13 +1,17 @@
+.kdeseucim_content{
+    max-width: 1000px;
+    margin: auto;
+}
+
 main{
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
 }
 
 article{
     margin: 0.8rem 1rem 1.5rem clamp(0.8rem, 3vw, 3rem); 
     padding-top: 1rem;
-    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    border-top: 2px solid rgba(7, 7, 7, 0.4);
 }
 
 main h1{

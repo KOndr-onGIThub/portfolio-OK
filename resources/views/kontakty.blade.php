@@ -9,10 +9,11 @@
 
 @section('content')
 
-    <header>
+<div class="kontakty_content">
+    <section class="kontakty_header">
         <h1>kontakty</h1>
         <p>Předat vzkaz, dotaz, nahlásit chybu na stránce apod. můžete pomocí jedné z metod níže.</p>
-    </header>
+    </section>
 
     <article class="kontact_form">
         <h3>kontaktní formulář</h3>
@@ -57,4 +58,6 @@
         </a>
 
     </article>
+</div>
+
 @endsection

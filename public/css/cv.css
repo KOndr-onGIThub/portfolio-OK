@@ -1,11 +1,6 @@
-body{
-    height: auto;
-}
-
-header{
+.cv_header{
     display: flex;
     flex-direction: column;
-    /* margin: clamp(1rem, 10vw, 5rem) clamp(2rem, 5vw, 5rem) 2rem; */
 }
 
 address{
@@ -24,17 +19,16 @@ address{
     border-radius: 5%;
     margin-right: clamp(0.3rem, 5vw, 5rem);
     margin-bottom: 1rem;
-    filter: drop-shadow(3px 2px 3px #4444dd); /*(offset-x offset-y blur-radius color)*/
+    filter: drop-shadow(3px 2px 3px rgb(158, 134, 0)); /*(offset-x offset-y blur-radius color)*/
 }
 .cv_perex {
     display: flex;
     align-items: flex-start;
     /* justify-content: center; */
     flex-direction: column;
-    width: clamp(10rem, 60vw, 60rem);
+    width: clamp(10rem, 80vw, 80ch);
     font-size: clamp(0.8rem, 3vw, 1.5rem);
 }
-
 .cv_perex, article {
     margin: 2rem auto;
 }
@@ -43,7 +37,7 @@ address{
 article{
     display: flex;
     flex-direction: column;
-    width: clamp(10rem, 60vw, 60rem);
+    width: clamp(10rem, 80vw, 80ch);
     border-top: 2px solid rgba(0,0,0,0.4);
     padding-top: 1rem;
 }
@@ -77,9 +71,9 @@ main h6{
     .cv_perex{
         flex-direction: row;
     }
-    header{
+    .cv_header{
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: center;
         align-items: baseline;
     }
     .cv_header h3{
@@ -87,9 +81,9 @@ main h6{
     }
     address{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     address a{
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
 }
